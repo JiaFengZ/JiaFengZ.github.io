@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>最近使用react开发的一些思考 | jf blob</title>
+    <meta name="description" content="jf的blob">
+    <link rel="icon" href="/blob.jpg">
+    
+    <link rel="preload" href="/assets/css/0.styles.b773ea28.css" as="style"><link rel="preload" href="/assets/js/app.d2fccc8c.js" as="script"><link rel="preload" href="/assets/js/2.ae3a5b9e.js" as="script"><link rel="preload" href="/assets/js/7.92d3af19.js" as="script"><link rel="prefetch" href="/assets/js/3.5934b251.js"><link rel="prefetch" href="/assets/js/4.059ac781.js"><link rel="prefetch" href="/assets/js/5.a40afbd7.js"><link rel="prefetch" href="/assets/js/6.5a7c375d.js"><link rel="prefetch" href="/assets/js/8.7a54c80d.js"><link rel="prefetch" href="/assets/js/9.6613c730.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b773ea28.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/blob.jpg" alt="jf blob" class="logo"> <span class="site-name can-hide">jf blob</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/react/react.html" class="nav-link router-link-exact-active router-link-active">react</a></li><li class="dropdown-item"><!----> <a href="/pages/vue/vue.html" class="nav-link">vue</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/jiaFengZ" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/react/react.html" class="nav-link router-link-exact-active router-link-active">react</a></li><li class="dropdown-item"><!----> <a href="/pages/vue/vue.html" class="nav-link">vue</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/jiaFengZ" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>react</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/react/react.html" class="active sidebar-link">react</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/react/react.html#最近使用react开发的一些思考" class="sidebar-link">最近使用react开发的一些思考</a></li><li class="sidebar-sub-header"><a href="/pages/react/react.html#优化代码" class="sidebar-link">优化代码</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="最近使用react开发的一些思考"><a href="#最近使用react开发的一些思考" class="header-anchor">#</a> 最近使用react开发的一些思考</h2> <p><a href="https://github.com/JiaFengZ/work-summary/blob/master/doc/react-design.md" target="_blank" rel="noopener noreferrer">原文<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="组件化（结合参考https-juejin-im-post-5d566e82f265da03f77e653c-heading-44）"><a href="#组件化（结合参考https-juejin-im-post-5d566e82f265da03f77e653c-heading-44）" class="header-anchor">#</a> 组件化（结合参考https://juejin.im/post/5d566e82f265da03f77e653c#heading-44）</h3> <p>组件化就是页面看作一棵组件树构成，由很多个足够合理的小组件组合成整个应用。
+根据最近的项目的经验，设计有如下类组件：</p> <ul><li>基础组件（table、select...，跨项目通用的组件）</li> <li>项目内通用组件</li> <li>模块内通用组件</li> <li>业务组件（具体业务组件逻辑）</li></ul> <p>具体业务组件由上到下可考虑如下抽象设计：</p> <ul><li>布局组件（layout，和业务逻辑无关，是页面布局结构的抽象，可填充具体业务组件）</li> <li>容器组件（是组合各个实现具体逻辑的业务组件的容器，负责和store通信，集中管理数据）</li> <li>高阶组件（高阶组件是一个函数，接收一个组件作为参数，并返回一个功能增强的组件）</li> <li>逻辑组件（实现具体业务逻辑代码细节的组件）</li> <li>纯展示组件（无状态组件，纯粹根据props渲染）</li></ul> <h3 id="代码分层"><a href="#代码分层" class="header-anchor">#</a> 代码分层</h3> <p>在此举一个最近对项目代码结构优化的例子，项目中一个报表页面，用于展示数据，具备的功能有：复杂组合条件筛选、按字段排序、
+编辑字段、开关状态控制等，原有代码把数据获取、事件处理和渲染方法都放在同一个组件文件里，简单来说就是这个报表组件代码过于臃肿，
+但是按照组件分割划分的思想，这个报表组件已经足够原子，难以再细分。问题在于获取数据、过滤数据、更新数据逻辑过于庞杂，事件处理比较多，
+既然继续细分不合适，那就用上代码分层的思想了，仔细观察报表组件的逻辑，从上到下分为：数据、事件、渲染，那就按此分层代码，数据最外层，
+事件依赖于数据层，次之，最底层是渲染层，同时依赖于上层的事件和最外层的数据，结构变更后包装最终的组件如下：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">import</span> Data <span class="token keyword">from</span> <span class="token string">'./Data'</span>
+<span class="token keyword">import</span> Event <span class="token keyword">from</span> <span class="token string">'./Event'</span>
+<span class="token keyword">import</span> Render <span class="token keyword">from</span> <span class="token string">'./Render'</span>
+<span class="token keyword">import</span> Table <span class="token keyword">from</span> <span class="token string">'components/Table'</span>
+
+@Data
+@Event
+@Render
+<span class="token keyword">class</span> <span class="token class-name">List</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>
+      data1<span class="token punctuation">,</span>
+      data2<span class="token punctuation">,</span>
+      <span class="token operator">...</span>
+    <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>dataProps
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>
+      handle1<span class="token punctuation">,</span>
+      handle2<span class="token punctuation">,</span>
+      <span class="token operator">...</span>
+    <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>eventProps
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>
+      render1<span class="token punctuation">,</span>
+      render2<span class="token punctuation">,</span>
+      <span class="token operator">...</span>
+    <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>renderProps
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>Table
+        data1<span class="token operator">=</span><span class="token punctuation">{</span>data1<span class="token punctuation">}</span>
+        data2<span class="token operator">=</span><span class="token punctuation">{</span>data2<span class="token punctuation">}</span>
+        handle1<span class="token operator">=</span><span class="token punctuation">{</span>handle1<span class="token punctuation">}</span>
+        render1<span class="token operator">=</span><span class="token punctuation">{</span>render1<span class="token punctuation">}</span>
+        <span class="token operator">...</span>
+      <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// ./Data</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">withData</span> <span class="token punctuation">(</span><span class="token parameter">WrappedComponent</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">class</span> <span class="token class-name">Data</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>
+    <span class="token function">render</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>WrappedComponent
+          dataProps<span class="token operator">=</span><span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span>
+        <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// ./Event</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">withEvent</span> <span class="token punctuation">(</span><span class="token parameter">WrappedComponent</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">class</span> <span class="token class-name">Data</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>
+    <span class="token function">handle1</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> <span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>dataProps
+    <span class="token punctuation">}</span>
+    <span class="token function">render</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>WrappedComponent
+          eventProps<span class="token operator">=</span><span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span>
+        <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// ./Render</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">withRender</span> <span class="token punctuation">(</span><span class="token parameter">WrappedComponent</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">class</span> <span class="token class-name">Data</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>
+    <span class="token function">render1</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> <span class="token punctuation">{</span> data1 <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>dataProps
+      <span class="token keyword">const</span> <span class="token punctuation">{</span> handle1 <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>eventProps
+      <span class="token keyword">return</span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>button
+          onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token function">handle1</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> data1<span class="token punctuation">)</span><span class="token punctuation">}</span>
+        <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">render</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>WrappedComponent
+          renderProps<span class="token operator">=</span><span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span>
+        <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h3 id="代码适配器"><a href="#代码适配器" class="header-anchor">#</a> 代码适配器</h3> <p>项目中使用了SuperAgent作为http请求库，为了适配项目需要，对此做了几层的代码适配封装处理，包括：参数处理、成功响应数据预处理、
+失败错误统一处理、数据缓存处理，具体以数据缓存处理为例；</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">import</span> storage <span class="token keyword">from</span> <span class="token string">'./storage'</span>
+<span class="token keyword">function</span> <span class="token function">cacheWrapper</span><span class="token punctuation">(</span><span class="token parameter">config<span class="token punctuation">,</span> request</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span>
+    useCache<span class="token punctuation">,</span>
+    forceUpdate<span class="token punctuation">,</span>
+    cacheTime<span class="token punctuation">,</span>
+    cacheMode<span class="token punctuation">,</span>
+    cacheKey
+  <span class="token punctuation">}</span> <span class="token operator">=</span> config
+  <span class="token keyword">let</span> cacheData
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>useCache<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    cacheData <span class="token operator">=</span> storage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span>cacheKey<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> cacheData <span class="token operator">?</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>cacheData<span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token punctuation">(</span>
+    <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">data</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        useCache <span class="token operator">&amp;&amp;</span> storage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span>cacheKey<span class="token punctuation">,</span> data<span class="token punctuation">,</span> cacheMode<span class="token punctuation">,</span> cacheTime<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> data
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h2 id="优化代码"><a href="#优化代码" class="header-anchor">#</a> 优化代码</h2> <ul><li><p>一些基本的优化代码思路（javascript设计模式与开发实践）：
+职责单一（分解过于复杂的模块、组件、函数）、提炼过程为函数、用对象参数替代过长的参数列表</p></li> <li><p>优化代码结构设计，组件化开发的代码结构其实就是组件设计的结构，可见组件化设计</p></li> <li><p>代码风格规范：命名规范（变量命名：如bool真假判断isxxx、事件命名:handlexxx、渲染方法命名renderxxx，请求数据命名：fetchxxx、非请求的获取数据getxxx、过滤数据方法命名：filterxxx）
+、组件代码书写位置规范：</p></li></ul> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">class</span> <span class="token class-name">demo</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 数据</span>
+  state <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token comment">// 生命周期方法</span>
+  <span class="token function">componentDidMount</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token comment">// 事件</span>
+  <span class="token function">handle</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token comment">// 渲染</span>
+  <span class="token function">render</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ul><li>性能优化（具体分析）</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d2fccc8c.js" defer></script><script src="/assets/js/2.ae3a5b9e.js" defer></script><script src="/assets/js/7.92d3af19.js" defer></script>
+  </body>
+</html>
